@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darts-Scorer-Home-Page</title>
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body id="home-page-body">
+    <h1 id="header">Darts Scorer</h1>
+
+    <div class="home-page-container">
+        <div class="home-page-items">
+            <div class="player-one-name">
+                <h2 class="player-one-name-title">Player One Name</h2>
+                <div class="player-one-input">
+                    <input class="player-one-input-box">
+                </div>
+            </div>
+            <div class="player-two-name">
+                <h2 class="player-two-name-title">Player Two Name</h2>
+                <div class="player-two-input">
+                    <input class="player-two-input-box">
+                </div>
+            </div>
+        </div>
+    
+        <div class="sets">
+            <h2 class="sets-title">Sets</h2>
+            <div class="radio-buttons" id="sets-radio-buttons">
+                <input class="radio-input" class="radio-input-sets" type="radio" name="set-count" value="1" id="sets-radio-1">
+                <label class="radio-label" class="radio-input-sets" type="sets-radio-label" for="sets-radio-1">Best of 1</label>
+                <input class="radio-input" class="radio-input-sets" type="radio" name="set-count" value="3" id="sets-radio-2">
+                <label class="radio-label" class="radio-input-sets" type="sets-radio-label" for="sets-radio-2">Best of 3</label>
+                <input class="radio-input" class="radio-input-sets" type="radio" name="set-count" value="5" id="sets-radio-3">
+                <label class="radio-label" class="radio-input-sets" type="sets-radio-label" for="sets-radio-3">Best of 5</label>
+            </div>
+        </div>
+    
+        <div class="legs">
+            <h2 class="legs-title">Legs</h2>
+            <div class="radio-buttons" id="legs-radio-buttons">
+                <input class="radio-input" type="radio" name="leg-count" value="1" id="legs-radio-1">
+                <label class="radio-label" type="legs-radio-label" for="legs-radio-1">First to 1</label>
+                <input class="radio-input" type="radio" name="leg-count" value="2" id="legs-radio-2">
+                <label class="radio-label" type="legs-radio-label" for="legs-radio-2">First to 2</label>
+                <input class="radio-input" type="radio" name="leg-count" value="3" id="legs-radio-3">
+                <label class="radio-label" type="legs-radio-label" for="legs-radio-3">First to 3</label>
+                <input class="radio-input" type="radio" name="leg-count" value="4" id="legs-radio-4">
+                <label class="radio-label" type="legs-radio-label" for="legs-radio-4">First to 4</label>
+                <input class="radio-input" type="radio" name="leg-count" value="5" id="legs-radio-5">
+                <label class="radio-label" type="legs-radio-label" for="legs-radio-5">First to 5</label>
+            </div>     
+        </div>
+    
+        <div class="home-page-items-two">
+            <div class="start-score">
+                <h2 class="start-score-title">Start Score</h2>
+                <div class="radio-buttons" id="start-radio-buttons">
+                    <input class="radio-input" type="radio" name="start-count" value="301" id="start-radio-1">
+                    <label class="radio-label" type="start-radio-label" for="start-radio-1">301</label>
+                    <input class="radio-input" type="radio" name="start-count" value="501" id="start-radio-2">
+                    <label class="radio-label" type="start-radio-label" for="start-radio-2">501</label>
+                </div>
+            </div>
+            <div class="throw-first">
+                <h2 class="throw-first-title">Throw first</h2>
+                <div class="radio-buttons" id="throw-radio-buttons">
+                    <input class="radio-input" type="radio" name="throw-first" value="1" id="throw-radio-1">
+                    <label class="radio-label" type="throw-radio-label" for="throw-radio-1">Player One</label>
+                    <input class="radio-input" type="radio" name="throw-first" value="2" id="throw-radio-2">
+                    <label class="radio-label" type="throw-radio-label" for="throw-radio-2">Player Two</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="start-button">
+            <a href="Game-page.html"><button id="start-match-button" disabled>Start Game</button></a>
+        </div>
+    </div>    
+
+<script src="darts-scorer.js"></script>
+</body>
+</html>
+

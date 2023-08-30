@@ -1,0 +1,136 @@
+body {
+  background: rgb(50, 50, 50);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home-page-container {
+  border: 5px solid $primaryFont;
+  width: 80%;
+  border-radius: 25px;
+  margin: auto;
+}
+
+#header {
+    color: $primaryFont;
+    height: 200px;
+    font-size: 100px;
+    @include flex();
+    margin: auto;
+    width: 80%;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    border: 5px solid $primaryFont;
+}
+
+.sets {
+  background-color: $primaryBackground;
+  color: $primaryFont;
+  height: 150px;
+  width: 80%;
+  margin: auto;
+  @include flex();
+  .sets-title {
+    @include elementTitle;
+  }
+}
+
+.legs {
+  background-color: $primaryBackground;
+  color: $primaryFont;
+  height: 150px;
+  width: 80%;
+  margin: auto;
+  @include flex();
+  .legs-title {
+    @include elementTitle;
+  }
+  }
+
+  .start-score {
+    background-color: $primaryBackground;
+    color: $primaryFont;
+    height: 150px;
+    width: 80%;
+    margin: auto;
+    @include flex();
+    .start-score-title {
+      @include elementTitle;
+    }  
+  }
+
+  .throw-first {
+    color: $primaryFont;
+    height: 150px;
+    width: 80%;
+    margin: auto;
+    @include flex;
+    .throw-first-title {
+      @include elementTitle;
+    }
+  }
+
+  .start-button {
+    margin-top: 40px;
+    @include flex();
+    margin-bottom: 10px;
+    :hover {
+      cursor: pointer;
+    }
+    button {
+      background-color: $primaryBackground;
+      color: $primaryFont;
+      font-weight: bold;
+      font-size: 70px;
+      height: 80px;
+      width: 500px;
+    }
+  }
+
+
+
+  .radio-buttons {
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    .radio-input {
+      display: none;
+    }
+    .radio-label:not(:last-of-type) {
+      border-right: 1px solid $primaryBackground;
+    }
+    .radio-label {
+      padding: 8px 14px;
+      font-size: 14px;
+      color: $primaryBackground;
+      background-color: $primaryFont;
+      cursor: pointer;
+      transition: background-color 0.1s;
+    }
+    .radio-input:checked + .radio-label {
+      background-color: $radioSelected;
+      color: $primaryFont;
+    }
+  }
+
+  .home-page-items {
+    @include flex-row;
+    gap: 150px;
+    width: 80%;
+    margin: auto;
+    .player-one-name-title, .player-one-input, .player-two-name-title, .player-two-input {
+      @include flex;
+      color: $primaryFont;
+    }
+    .player-one-input-box, .player-two-input-box {
+      text-align: center;
+    }
+  }
+
+  .home-page-items-two {
+    @include flex-row;
+    width: 80%;
+    margin: auto;
+  }
+
+  

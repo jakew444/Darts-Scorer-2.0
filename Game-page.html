@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darts-Scorer-Game-Page</title>
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body id="game-page-body">
+    <h1 id="header">Darts Scorer</h1>
+
+    <div class="game-page-container">
+        <div class="total-score-container">
+            <div class="player-one-total-score-container">
+                <h3 class="player-one-title">Player 1</h3>
+                <div class="player-one-total-score-content">
+                    <h3 class="player-one-sets-title">Sets</h3>
+                    <h4 class="player-one-total-sets">0</h4>
+                    <h3 class="player-one-legs-title">Legs</h3>
+                    <h4 class="player-one-total-legs">0</h4>
+                </div>
+            </div>
+            <div class="winning-scores">
+                <h5 class="selected-sets">Sets: best of TEST</h5>
+                <h5 class="selected-legs">Legs: first to TEST</h5>
+            </div>
+            <div class="player-two-total-score-container">
+                <h3 class="player-two-title">Player 2</h3>
+                <div class="player-two-total-score-content">
+                    <h3 class="player-two-sets-title">Sets</h3>
+                    <h4 class="player-two-total-sets">0</h4>
+                    <h3 class="player-two-legs-title">Legs</h3>
+                    <h4 class="player-two-total-legs">0</h4>
+                </div>
+            </div>
+        </div>  
+        <div class="match-container">
+            <div class="player-one-container">
+                <h2 class="player-one-match-title">Player 1</h2>
+                <div class="player-one-match-scores">
+                    <h3 class="player-one-score"></h3>
+                    <h4 class="player-one-previous-score">---</h4>
+                    <input type="number" id="player-one-turn"><br>
+                    <button type="submit" id="player-one-button">Submit Score</button>
+                </div>
+            </div>
+            <div class="player-two-container">
+                <h2 class="player-two-match-title">Player 2</h2>
+                <div class="player-two-match-scores">
+                    <h3 class="player-two-score">TEST</h3>
+                    <h4 class="player-two-previous-score">---</h4>
+                    <input type="number" id="player-two-turn"><br>
+                    <button type="submit" id="player-two-button">Submit Score</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="darts-scorer.js"></script>
+</body>
+</html>

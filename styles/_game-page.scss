@@ -1,0 +1,66 @@
+.game-page-container {
+    border: 5px solid $primaryFont;
+    width: 80%;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.total-score-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    @include flex-row;
+    gap: 100px;
+    color: $primaryFont;
+    .total-score-header {
+        @include flex;
+    }
+    .player-one-title, .player-two-title {
+        @include flex;
+        margin-bottom: 0px;
+    }
+    .player-one-total-score-content, .player-two-total-score-content  {
+        @include flex-row;
+        gap: 10px;
+    }
+}
+
+.winning-scores {
+    @include flex-row;
+    gap: 10px;
+    color: $primaryFont;
+}
+
+.match-container {
+    @include flex-row;
+    height: 410px;
+    gap: 175px;
+    width: 80%;
+    margin: auto;
+    border-radius: 25px;
+    color: $primaryFont;
+    .player-one-container, .player-two-container {
+        color: $primaryBackground;
+        background-color: $primaryFont;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 25px
+    }
+    .player-one-match-title, .player-two-match-title {
+        @include flex;
+        font-size: 50px;
+        margin-top: 0px;
+    }
+    .player-one-match-scores, .player-two-match-scores {
+        @include flex;
+        #player-one-turn, #player-two-turn {
+            text-align: center;
+        }
+    }
+    .player-one-score, .player-two-score {
+        font-size: 100px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+ 
+}
